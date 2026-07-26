@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://void0zero.github.io/sitemap.xml
