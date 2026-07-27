@@ -141,6 +141,45 @@ img {
   text-transform: uppercase;
 }
 
+.wordmark {
+  display: inline-flex;
+  align-items: baseline;
+  white-space: nowrap;
+}
+
+.wordmark-inline {
+  color: var(--cyan-soft);
+  font-family: var(--display);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.slashed-zero {
+  --zero-slash: currentColor;
+  position: relative;
+  display: inline-block;
+}
+
+.slashed-zero::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.075em;
+  height: 0.75em;
+  pointer-events: none;
+  content: "";
+  background: var(--zero-slash);
+  border-radius: 999px;
+  transform: translate(-50%, -50%) rotate(29deg);
+  transform-origin: center;
+}
+
+.brand .slashed-zero {
+  margin-left: 0.02em;
+  color: var(--cyan-soft);
+}
+
 .brand img {
   width: 2.45rem;
   height: 2.45rem;
@@ -261,26 +300,31 @@ img {
 }
 
 .hero h1 {
-  max-width: 8ch;
+  max-width: none;
   margin: 0;
   color: #ebfcff;
   font-family: var(--display);
   font-size: clamp(5.6rem, 11.5vw, 12rem);
   font-weight: 500;
   letter-spacing: -0.065em;
-  line-height: 0.7;
+  line-height: 0.82;
   text-shadow:
     0 0 0.05em #092837,
     0 0 0.32em rgba(38, 233, 255, 0.18);
   text-transform: uppercase;
 }
 
-.hero h1 span {
-  display: block;
-  margin-left: 0.36em;
+.hero h1 .slashed-zero {
+  --zero-slash: var(--magenta);
+  margin-left: 0.015em;
   color: transparent;
   -webkit-text-stroke: 1px var(--magenta);
   text-shadow: 0 0 0.28em rgba(255, 63, 210, 0.22);
+}
+
+.hero h1 .slashed-zero::after {
+  width: 0.032em;
+  height: 0.68em;
 }
 
 .hero-copy {
