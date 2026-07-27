@@ -7,6 +7,10 @@ the public rolling release tagged `void0-latest` from
 [`romajs/game-downloads`](https://github.com/romajs/game-downloads), then
 connects each platform button to the matching package.
 
+The current presentation tracks Void0 v0.16.0: two-minute elimination
+regulation, five-second signal reboots, tied-leaders sudden death, six stored
+power-ups, the Signal Garage, and the animated title Circuit.
+
 ## Local development
 
 ```bash

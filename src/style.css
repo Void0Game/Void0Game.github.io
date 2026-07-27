@@ -156,8 +156,21 @@ img {
 }
 
 .slashed-zero {
+  position: relative;
   display: inline-block;
-  font-family: "Anonymous Pro", monospace;
+  font-family: inherit;
+}
+
+.slashed-zero::after {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  width: clamp(1px, 0.025em, 4px);
+  height: 0.56em;
+  background: currentColor;
+  content: "";
+  pointer-events: none;
+  transform: translate(-50%, -50%) rotate(32deg);
 }
 
 .brand .slashed-zero {
@@ -304,6 +317,11 @@ img {
   color: transparent;
   -webkit-text-stroke: 1px var(--magenta);
   text-shadow: 0 0 0.28em rgba(255, 63, 210, 0.22);
+}
+
+.hero h1 .slashed-zero::after {
+  background: var(--magenta);
+  box-shadow: 0 0 0.28em rgba(255, 63, 210, 0.22);
 }
 
 .hero-copy {
@@ -561,6 +579,60 @@ img {
 .cinematic-frame figcaption span {
   margin-right: 0.7rem;
   color: var(--cyan);
+}
+
+.release-panel {
+  background:
+    radial-gradient(circle at 18% 8%, rgba(38, 233, 255, 0.055), transparent 28rem),
+    radial-gradient(circle at 82% 78%, rgba(255, 63, 210, 0.045), transparent 24rem),
+    #02060b;
+}
+
+.release-panel .section-heading {
+  width: min(58rem, 100%);
+}
+
+.release-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 4rem;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.release-card {
+  min-height: 17rem;
+  padding: 2rem;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(145deg, rgba(38, 233, 255, 0.025), transparent 60%);
+}
+
+.release-card strong {
+  display: block;
+  color: var(--magenta);
+  font-family: var(--display);
+  font-size: clamp(2.4rem, 4vw, 4.6rem);
+  font-weight: 500;
+  line-height: 1;
+  text-shadow: 0 0 1.2rem rgba(255, 63, 210, 0.18);
+}
+
+.release-card h3 {
+  margin: 3.4rem 0 0.8rem;
+  color: #e7fbff;
+  font-family: var(--display);
+  font-size: 1.35rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.release-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
 }
 
 .systems {
@@ -1113,6 +1185,10 @@ footer > p:nth-child(2) {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .release-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .zero-phase {
     grid-template-columns: 1fr;
   }
@@ -1226,6 +1302,10 @@ footer > p:nth-child(2) {
   }
 
   .system-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .release-grid {
     grid-template-columns: 1fr;
   }
 
