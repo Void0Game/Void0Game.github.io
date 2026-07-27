@@ -37,8 +37,10 @@ async function loadLatestRelease() {
     if (!response.ok) throw new Error(`GitHub returned ${response.status}`);
 
     const release = await response.json();
+    const releaseVersion = (release.name || release.tag_name)
+      .replace(/^Void0\s*/i, "");
     document.querySelector("[data-release-version]").textContent =
-      `${release.tag_name} // latest build`;
+      `${releaseVersion} // latest build`;
     document.querySelector("[data-release-date]").textContent =
       `Updated ${formatDate(release.updated_at || release.published_at)}`;
     const notes = document.querySelector("[data-release-notes]");
