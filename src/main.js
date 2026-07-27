@@ -38,7 +38,7 @@ async function loadLatestRelease() {
 
     const release = await response.json();
     document.querySelector("[data-release-version]").textContent =
-      `${release.name || release.tag_name} // latest build`;
+      `${release.tag_name} // latest build`;
     document.querySelector("[data-release-date]").textContent =
       `Updated ${formatDate(release.updated_at || release.published_at)}`;
     const notes = document.querySelector("[data-release-notes]");

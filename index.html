@@ -29,7 +29,7 @@
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="Void0 home">
         <img src="/icon.svg" alt="" aria-hidden="true" />
-        <span>Void0</span>
+        <span class="wordmark" aria-hidden="true">Void<span class="slashed-zero">0</span></span>
       </a>
       <nav aria-label="Primary navigation">
         <a href="#game">The circuit</a>
@@ -46,9 +46,8 @@
         <div class="hero-grid" aria-hidden="true"></div>
         <div class="hero-content">
           <p class="eyebrow reveal">Survival protocol // signal 01</p>
-          <h1 id="hero-title" class="reveal reveal-delay-1">
-            Void
-            <span>0</span>
+          <h1 id="hero-title" class="wordmark reveal reveal-delay-1" aria-label="Void0">
+            <span aria-hidden="true">Void</span><span class="slashed-zero" aria-hidden="true">0</span>
           </h1>
           <p class="hero-copy reveal reveal-delay-2">
             Every turn leaves a weapon behind. Break rival signals, grow your
@@ -221,12 +220,23 @@
         <div class="download-heading reveal">
           <p class="eyebrow">Native desktop protocol</p>
           <h2 id="downloads-title">Choose your signal.</h2>
-          <p>Download the current Void0 build for your platform.</p>
+          <p>
+            Download the current
+            <span class="wordmark wordmark-inline" aria-label="Void0">
+              <span aria-hidden="true">Void</span><span class="slashed-zero" aria-hidden="true">0</span>
+            </span>
+            build for your platform.
+          </p>
         </div>
 
         <div class="release-meta reveal" role="status" aria-live="polite" hidden>
           <span class="status-pulse" aria-hidden="true"></span>
-          <strong data-release-version>Latest desktop release</strong>
+          <strong>
+            <span class="wordmark wordmark-inline" aria-label="Void0">
+              <span aria-hidden="true">Void</span><span class="slashed-zero" aria-hidden="true">0</span>
+            </span>
+            <span data-release-version>Latest desktop release</span>
+          </strong>
           <span data-release-date></span>
           <a data-release-notes href="#downloads">Release notes</a>
         </div>
@@ -291,9 +301,9 @@
     </main>
 
     <footer>
-      <a class="brand" href="#top">
+      <a class="brand" href="#top" aria-label="Void0 home">
         <img src="/icon.svg" alt="" aria-hidden="true" />
-        <span>Void0</span>
+        <span class="wordmark" aria-hidden="true">Void<span class="slashed-zero">0</span></span>
       </a>
       <p>Outrun the light. Outlive the grid.</p>
       <p class="footer-credit">
