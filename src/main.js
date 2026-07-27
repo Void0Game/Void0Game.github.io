@@ -5,14 +5,14 @@ import "@fontsource/space-grotesk/latin-400.css";
 import "@fontsource/space-grotesk/latin-500.css";
 import "./style.css";
 
-const PUBLIC_RELEASE_TAG = "void-zero-latest";
+const PUBLIC_RELEASE_TAG = "void0-latest";
 const RELEASE_API =
   `https://api.github.com/repos/romajs/game-downloads/releases/tags/${PUBLIC_RELEASE_TAG}`;
 
 const expectedAssets = {
-  macos: "VoidZero-macOS-universal.zip",
-  windows: "VoidZero-Windows-x86_64.zip",
-  linux: "VoidZero-Linux-x86_64.tar.gz",
+  macos: "Void0-macOS-universal.zip",
+  windows: "Void0-Windows-x86_64.zip",
+  linux: "Void0-Linux-x86_64.tar.gz",
 };
 
 function formatBytes(bytes) {
@@ -54,7 +54,7 @@ async function loadLatestRelease() {
     });
     releaseMeta.hidden = false;
   } catch (error) {
-    console.info("Void Zero public release is not available yet.", error);
+    console.info("Void0 public release is not available yet.", error);
   }
 }
 
