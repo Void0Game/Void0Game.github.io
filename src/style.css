@@ -156,23 +156,8 @@ img {
 }
 
 .slashed-zero {
-  --zero-slash: currentColor;
-  position: relative;
   display: inline-block;
-}
-
-.slashed-zero::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0.075em;
-  height: 0.75em;
-  pointer-events: none;
-  content: "";
-  background: var(--zero-slash);
-  border-radius: 999px;
-  transform: translate(-50%, -50%) rotate(29deg);
-  transform-origin: center;
+  font-family: "Anonymous Pro", monospace;
 }
 
 .brand .slashed-zero {
@@ -315,16 +300,10 @@ img {
 }
 
 .hero h1 .slashed-zero {
-  --zero-slash: var(--magenta);
   margin-left: 0.015em;
   color: transparent;
   -webkit-text-stroke: 1px var(--magenta);
   text-shadow: 0 0 0.28em rgba(255, 63, 210, 0.22);
-}
-
-.hero h1 .slashed-zero::after {
-  width: 0.032em;
-  height: 0.68em;
 }
 
 .hero-copy {
