@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://void0zero.github.io/sitemap.xml
+Sitemap: https://void0game.github.io/sitemap.xml

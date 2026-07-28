@@ -1,6 +1,6 @@
 # Void0 website
 
-Official download landing page for [Void0](https://void0zero.github.io/).
+Official download landing page for [Void0](https://void0game.github.io/).
 
 The site is a static Vite application deployed through GitHub Pages. It reads
 the public rolling release tagged `void0-latest` from
