@@ -7,9 +7,10 @@ the public rolling release tagged `void0-latest` from
 [`romajs/game-downloads`](https://github.com/romajs/game-downloads), then
 connects each platform button to the matching package.
 
-The current presentation tracks Void0 v0.16.0: two-minute elimination
-regulation, five-second signal reboots, tied-leaders sudden death, six stored
-power-ups, the Signal Garage, and the animated title Circuit.
+The current presentation tracks Void0 v0.17.0: a 60-second Open Circuit,
+five-second signal reboots, six Cut waves across the final regulation minute,
+four-finalist Sudden Death, six stored power-ups, direct Rear View, soundtrack
+controls, and the full Match Aftermath.
 
 ## Local development
 

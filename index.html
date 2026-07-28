@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Score eliminations, grow your ribbon, and rule a collapsing sixteen-signal Circuit in Void0."
+      content="Fight through Open Circuit, survive six Cut waves, and become the last signal above a collapsing sixteen-player grid in Void0."
     />
     <meta name="theme-color" content="#02060d" />
     <meta property="og:title" content="Void0" />
     <meta
       property="og:description"
-      content="Two minutes. Sixteen signals. Most eliminations wins."
+      content="Sixteen signals. Six Cut waves. One collapsing Circuit."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://void0zero.github.io/" />
@@ -45,14 +45,14 @@
         <div class="storm-flash" aria-hidden="true"></div>
         <div class="hero-grid" aria-hidden="true"></div>
         <div class="hero-content">
-          <p class="eyebrow reveal">Elimination protocol // v0.16.0</p>
+          <p class="eyebrow reveal">Cut protocol // v0.17.0</p>
           <h1 id="hero-title" class="wordmark reveal reveal-delay-1" aria-label="Void0">
             <span aria-hidden="true">Void</span><span class="slashed-zero" aria-hidden="true">0</span>
           </h1>
           <p class="hero-copy reveal reveal-delay-2">
             Every turn leaves a weapon behind. Break rival signals, grow your
-            ribbon, and own the highest elimination score before the Circuit
-            forces tied leaders into the void.
+            ribbon, and climb the K/D rank before six Cut waves erase the
+            lowest signals and send the finalists into a collapsing void.
           </p>
           <div class="hero-actions reveal reveal-delay-3">
             <a class="button button-primary" href="#downloads">
@@ -66,7 +66,7 @@
           <div class="protocol-strip reveal reveal-delay-3" aria-label="Game facts">
             <span><strong>16</strong> signals</span>
             <span><strong>02:00</strong> regulation</span>
-            <span><strong>05s</strong> reboot</span>
+            <span><strong>06</strong> Cut waves</span>
           </div>
         </div>
         <a class="scroll-cue" href="#game" aria-label="Explore Void0">
@@ -83,9 +83,9 @@
         </div>
         <p class="section-copy reveal">
           Sixteen riders launch from the perimeter of a translucent arena over
-          a bottomless void. Every rival you erase makes your ribbon longer,
-          brighter, and more valuable. A defeated signal reboots after five
-          seconds, but your elimination score never resets.
+          a bottomless void. Every kill makes your active ribbon longer and
+          more dangerous. Destruction retracts that trail and resets its
+          length, while your K/D and run XP survive the five-second reboot.
         </p>
 
         <figure class="cinematic-frame reveal">
@@ -96,35 +96,35 @@
             height="1080"
             loading="lazy"
           />
-          <figcaption><span>Live telemetry</span> Ribbon growth // 16 signals</figcaption>
+          <figcaption><span>Live telemetry</span> Rank // Signal // Status // K/D</figcaption>
         </figure>
       </section>
 
       <section class="release-panel section" aria-labelledby="release-title">
         <div class="section-heading reveal">
-          <p class="eyebrow">Version 0.16.0 // new rules</p>
-          <h2 id="release-title">The Circuit remembers every hit.</h2>
+          <p class="eyebrow">Version 0.17.0 // Cut protocol</p>
+          <h2 id="release-title">The Circuit now erases the field.</h2>
         </div>
         <div class="release-grid">
           <article class="release-card reveal">
-            <strong>05s</strong>
-            <h3>Signal reboot</h3>
-            <p>Return from the perimeter with your eliminations, XP, deaths, and ribbon growth intact.</p>
+            <strong>60s</strong>
+            <h3>Open Circuit</h3>
+            <p>Attack without elimination from the session. Destroyed signals reboot from the edge after five seconds.</p>
           </article>
           <article class="release-card reveal reveal-delay-1">
-            <strong>1st</strong>
-            <h3>Highest score wins</h3>
-            <p>Regulation ends at two minutes. Only riders tied for the elimination lead continue.</p>
+            <strong>06</strong>
+            <h3>Cut waves</h3>
+            <p>Every ten seconds, the two lowest-ranked signals are normally selected for permanent removal.</p>
           </article>
           <article class="release-card reveal reveal-delay-2">
-            <strong>∞</strong>
-            <h3>Signal Garage</h3>
-            <p>Equip the Voidrunner or Cosmic Pixel Cat without changing competitive handling or collision.</p>
+            <strong>FADE</strong>
+            <h3>Live warning</h3>
+            <p>Targeted rows flash in the rank before their signals become LOST. Score, survival, and state break ties.</p>
           </article>
           <article class="release-card reveal">
-            <strong>LIVE</strong>
-            <h3>Animated title</h3>
-            <p>Six cosmetic signals race, jump, lean, and write ribbons behind registration.</p>
+            <strong>REC</strong>
+            <h3>Match Aftermath</h3>
+            <p>Review placement, K/D, XP, survival, distance, awards, career progress, and all sixteen final signals.</p>
           </article>
         </div>
       </section>
@@ -182,6 +182,26 @@
             <p>The item is stored until your command. Timing is the mechanic.</p>
           </article>
         </div>
+        <div class="control-deck reveal" aria-label="Field controls">
+          <div class="control-deck-heading">
+            <span>Field controls // direct signal access</span>
+            <strong>Read the fight without leaving it.</strong>
+          </div>
+          <dl>
+            <div>
+              <dt>C</dt>
+              <dd><strong>Rear View</strong><span>Hold for an instant 180° view behind your signal.</span></dd>
+            </div>
+            <div>
+              <dt>P / N</dt>
+              <dd><strong>Music</strong><span>Move directly to the previous or next transmission.</span></dd>
+            </div>
+            <div>
+              <dt>Shift</dt>
+              <dd><strong>Sprint</strong><span>Spend the rechargeable boost for a short velocity burst.</span></dd>
+            </div>
+          </dl>
+        </div>
       </section>
 
       <section class="zero-phase section" aria-labelledby="zero-title">
@@ -198,14 +218,15 @@
           <p class="eyebrow">Collapse protocol // -00:00</p>
           <h2 id="zero-title">When the grid falls away.</h2>
           <p>
-            If the elimination lead is tied at 02:00, only those leaders enter
-            sudden death and reboots stop. Glass cells rise and digitize faster
-            every second until one leader remains—or falls last into the void.
+            After six Cut waves, the remaining finalists enter Sudden Death.
+            Reboots stop, the clock turns negative, and 1,849 glass cells
+            digitize from the outside in. The collapse accelerates for up to
+            two minutes until one signal remains—or falls last into the void.
           </p>
           <div class="zero-meter" aria-hidden="true">
             <span>1,849 cells</span>
             <i></i>
-            <strong>VOID</strong>
+            <strong>120s collapse</strong>
           </div>
         </div>
       </section>
@@ -216,18 +237,18 @@
             <p class="eyebrow">Circuit archive</p>
             <h2 id="gallery-title">Signals from the void.</h2>
           </div>
-          <p>Live combat, signal reboot, and digital erasure beneath the storm.</p>
+          <p>Live combat, final telemetry, and digital erasure beneath the storm.</p>
         </div>
         <div class="gallery-grid">
           <button class="gallery-item gallery-item-wide reveal" type="button" data-lightbox>
             <img
-              src="/images/respawn.webp"
-              alt="A destroyed signal waiting through its five-second reboot"
+              src="/images/aftermath.webp"
+              alt="Void0 Match Aftermath showing performance and the final rank of all sixteen signals"
               width="1920"
               height="1080"
               loading="lazy"
             />
-            <span>Signal reboot</span>
+            <span>Match Aftermath</span>
           </button>
           <button class="gallery-item reveal reveal-delay-1" type="button" data-lightbox>
             <img
@@ -242,12 +263,12 @@
           <button class="gallery-item reveal reveal-delay-2" type="button" data-lightbox>
             <img
               src="/images/destruction.webp"
-              alt="A rider disintegrating into digital fragments"
+              alt="A signal disintegrating into digital fragments above the Circuit"
               width="1920"
               height="1080"
               loading="lazy"
             />
-            <span>Signal terminated</span>
+            <span>Signal Lost</span>
           </button>
         </div>
       </section>
