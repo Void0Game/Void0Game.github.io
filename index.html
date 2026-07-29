@@ -20,7 +20,7 @@
       content="https://void0game.github.io/images/hero.webp"
     />
     <link rel="canonical" href="https://void0game.github.io/" />
-    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg?v=0.18.0" />
     <title>Void0 — Rule the Circuit</title>
   </head>
   <body>
@@ -28,7 +28,7 @@
 
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="Void0 home">
-        <img src="/icon.svg" alt="" aria-hidden="true" />
+        <img src="/icon.svg?v=0.18.0" alt="" aria-hidden="true" />
         <span class="wordmark" aria-hidden="true">Void<span class="slashed-zero">0</span></span>
       </a>
       <nav aria-label="Primary navigation">
@@ -46,7 +46,7 @@
         <div class="hero-grid" aria-hidden="true"></div>
         <div class="hero-content">
           <p class="eyebrow reveal">Signal Trace // v0.18.0</p>
-          <h1 id="hero-title" class="wordmark reveal reveal-delay-1" aria-label="Void0">
+          <h1 id="hero-title" class="wordmark hero-wordmark reveal reveal-delay-1" aria-label="Void0">
             <span aria-hidden="true">Void</span><span class="slashed-zero" aria-hidden="true">0</span>
           </h1>
           <p class="hero-copy reveal reveal-delay-2">
@@ -102,29 +102,34 @@
 
       <section class="release-panel section" aria-labelledby="release-title">
         <div class="section-heading reveal">
-          <p class="eyebrow">Version 0.18.0 // Signal refinement</p>
-          <h2 id="release-title">Sharper signal.<br />Cleaner Circuit.</h2>
+          <p class="eyebrow">Neon survival // Electronic combat</p>
+          <h2 id="release-title">Outrun the storm.<br />Become the Signal.</h2>
+          <p class="release-intro">
+            A high-speed virtual survival sport inside a storm-lit cyberpunk
+            arena, driven by electronic music, dangerous light and the rivals
+            sharing your Circuit.
+          </p>
         </div>
         <div class="release-grid">
           <article class="release-card reveal">
-            <strong>CIN</strong>
-            <h3>Cinematic entry</h3>
-            <p>Mirrored key art dissolves into a compact title panel and a live six-Signal attract match.</p>
+            <strong>16</strong>
+            <h3>Signal survival</h3>
+            <p>Sixteen riders collide through a two-minute sprint before Fade waves and a collapsing Sudden Death decide the last light.</p>
           </article>
           <article class="release-card reveal reveal-delay-1">
-            <strong>HUD</strong>
-            <h3>Live telemetry</h3>
-            <p>Sprint charge, ribbon level, reboot feedback, Signal glyphs, and Session Rank read more clearly at speed.</p>
+            <strong>TRC</strong>
+            <h3>Every line is a weapon</h3>
+            <p>Your Signal Trace turns movement into territory. Eliminate rivals, extend it, jump danger, and close traps at full speed.</p>
           </article>
           <article class="release-card reveal reveal-delay-2">
-            <strong>CAT</strong>
-            <h3>Cosmic Pixel Cat</h3>
-            <p>A white feline superbike joins the Garage with modeled features, curved prism bands, and brighter wheel hubs.</p>
+            <strong>PTY</strong>
+            <h3>Friends in the Circuit</h3>
+            <p>Local simulation is playable now. Authenticated lobbies are laying the track for parties, friends, and full-player ranked matches.</p>
           </article>
           <article class="release-card reveal">
-            <strong>REC</strong>
-            <h3>Match History</h3>
-            <p>Review eight recent Circuit runs with placement, K/D, run XP, career XP, and the phase reached.</p>
+            <strong>XP</strong>
+            <h3>Build your Signal</h3>
+            <p>Earn career XP, raise your level, review K/D and match history, and shape your identity with collectible bike shells.</p>
           </article>
         </div>
       </section>
@@ -175,13 +180,8 @@
             <h3>Pulse</h3>
             <p>Erase every nearby Trace segment—including your own—and open a route through the light.</p>
           </article>
-          <article class="system-card system-card-command reveal reveal-delay-2">
-            <span class="keycap">Q</span>
-            <small>Manual activation</small>
-            <h3>You choose when.</h3>
-            <p>The item is stored until your command. Timing is the mechanic.</p>
-          </article>
         </div>
+        <p class="system-command-note reveal">You choose when.</p>
       </section>
 
       <section class="zero-phase section" aria-labelledby="zero-title">
@@ -293,7 +293,7 @@
         </div>
 
         <div class="download-grid">
-          <article class="download-card reveal">
+          <article class="download-card download-card-macos reveal">
             <span class="platform-mark">⌘</span>
             <div>
               <small>Universal build</small>
@@ -314,7 +314,7 @@
             </a>
           </article>
 
-          <article class="download-card reveal reveal-delay-1">
+          <article class="download-card download-card-windows reveal reveal-delay-1">
             <span class="platform-mark">⊞</span>
             <div>
               <small>64-bit build</small>
@@ -331,7 +331,7 @@
             </a>
           </article>
 
-          <article class="download-card reveal reveal-delay-2">
+          <article class="download-card download-card-linux reveal reveal-delay-2">
             <span class="platform-mark">λ</span>
             <div>
               <small>64-bit build</small>
@@ -353,12 +353,22 @@
 
     <footer>
       <a class="brand" href="#top" aria-label="Void0 home">
-        <img src="/icon.svg" alt="" aria-hidden="true" />
+        <img src="/icon.svg?v=0.18.0" alt="" aria-hidden="true" />
         <span class="wordmark" aria-hidden="true">Void<span class="slashed-zero">0</span></span>
       </a>
       <p>Outride the light. Rule the Circuit.</p>
       <p class="footer-credit">
-        Made with <span aria-label="love">◆</span> by
+        Made with
+        <svg
+          class="pixel-heart"
+          viewBox="0 0 16 14"
+          role="img"
+          aria-label="love"
+          shape-rendering="crispEdges"
+        >
+          <path d="M2 0h4v2h4V0h4v2h2v6h-2v2h-2v2h-2v2H6v-2H4v-2H2V8H0V2h2z" />
+        </svg>
+        by
         <a href="https://www.romajs.dev/support">Romualdo Santos</a>
       </p>
     </footer>

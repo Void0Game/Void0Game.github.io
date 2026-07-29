@@ -7,9 +7,10 @@ the public rolling release tagged `void0-latest` from
 [`romajs/game-downloads`](https://github.com/romajs/game-downloads), then
 connects each platform button to the matching package.
 
-The current presentation tracks Void0 v0.18.0: cinematic title entry, clearer
-match telemetry, the Cosmic Pixel Cat shell, Match History, a refreshed icon,
-six stored power-ups, six Fade waves, and the collapsing Sudden Death Circuit.
+The current presentation tracks Void0 v0.18.0 while focusing on the lasting
+game fantasy: sixteen-Signal survival, weaponized movement, electronic
+adrenaline, social multiplayer direction, career progression, six stored
+power-ups, six Fade waves, and the collapsing Sudden Death Circuit.
 
 ## Local development
 
