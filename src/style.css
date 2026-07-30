@@ -177,7 +177,7 @@ img {
 
 .site-header nav {
   display: flex;
-  gap: clamp(1.4rem, 3vw, 3.2rem);
+  gap: clamp(1rem, 2.2vw, 2.8rem);
   color: rgba(217, 248, 255, 0.62);
   font-family: var(--display);
   font-size: 0.72rem;
@@ -196,6 +196,24 @@ img {
 .header-cta:hover,
 .text-link:hover {
   color: var(--cyan);
+}
+
+.site-header nav .nav-community {
+  color: rgba(167, 174, 255, 0.82);
+}
+
+.site-header nav .nav-community:hover {
+  color: #c6caff;
+}
+
+.nav-community span {
+  display: inline-block;
+  margin-left: 0.2em;
+  transition: transform 160ms ease;
+}
+
+.nav-community:hover span {
+  transform: translate(0.12em, -0.12em);
 }
 
 .header-cta {
@@ -904,6 +922,179 @@ img {
   background: rgba(2, 7, 12, 0.96);
 }
 
+.community {
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 17% 50%, rgba(88, 101, 242, 0.13), transparent 25rem),
+    radial-gradient(circle at 85% 50%, rgba(255, 63, 210, 0.06), transparent 24rem),
+    #03060c;
+}
+
+.community-panel {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto minmax(22rem, 1fr) auto;
+  max-width: 78rem;
+  gap: clamp(2.5rem, 5vw, 5.5rem);
+  align-items: center;
+  margin: 0 auto;
+  padding: clamp(2.5rem, 5vw, 5rem);
+  overflow: hidden;
+  border: 1px solid rgba(116, 128, 255, 0.34);
+  background:
+    linear-gradient(115deg, rgba(88, 101, 242, 0.09), transparent 38%),
+    rgba(4, 10, 18, 0.78);
+  box-shadow:
+    inset 0 0 4rem rgba(88, 101, 242, 0.025),
+    0 2.5rem 7rem rgba(0, 0, 0, 0.28);
+  clip-path: polygon(18px 0, 100% 0, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0 100%, 0 18px);
+}
+
+.community-panel::before {
+  position: absolute;
+  top: 0;
+  left: 18px;
+  width: min(18rem, 28%);
+  height: 1px;
+  content: "";
+  background: linear-gradient(90deg, #8a95ff, transparent);
+  box-shadow: 0 0 1.2rem rgba(88, 101, 242, 0.85);
+}
+
+.community-panel::after {
+  position: absolute;
+  right: clamp(2rem, 5vw, 5rem);
+  bottom: 1.2rem;
+  color: rgba(129, 243, 255, 0.12);
+  content: "VOID0 // COMMUNITY RELAY";
+  font-family: var(--display);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+}
+
+.community-channel {
+  display: grid;
+  width: 8.5rem;
+  height: 8.5rem;
+  place-items: center;
+  align-content: center;
+  gap: 0.55rem;
+  color: #aeb5ff;
+  border: 1px solid rgba(116, 128, 255, 0.58);
+  background: rgba(7, 11, 27, 0.78);
+  box-shadow:
+    inset 0 0 2.5rem rgba(88, 101, 242, 0.08),
+    0 0 2rem rgba(88, 101, 242, 0.08);
+  clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+}
+
+.community-channel > span {
+  font-family: var(--display);
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-shadow: 0 0 0.8em rgba(88, 101, 242, 0.8);
+}
+
+.community-channel small,
+.community-action > small {
+  color: rgba(174, 181, 255, 0.68);
+  font-family: var(--display);
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.community-beacon {
+  position: relative;
+  width: 2.5rem;
+  height: 1rem;
+}
+
+.community-beacon::before,
+.community-beacon::after {
+  position: absolute;
+  top: 50%;
+  width: 0.28rem;
+  height: 0.28rem;
+  content: "";
+  border: 1px solid rgba(174, 181, 255, 0.62);
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.community-beacon::before {
+  left: 0;
+}
+
+.community-beacon::after {
+  right: 0;
+}
+
+.community-beacon i {
+  position: absolute;
+  top: 50%;
+  right: 0.55rem;
+  left: 0.55rem;
+  height: 1px;
+  background: #aeb5ff;
+  box-shadow: 0 0 0.7rem rgba(88, 101, 242, 0.9);
+  transform: translateY(-50%);
+}
+
+.community-copy h2 {
+  margin: 0;
+  color: #eef0ff;
+  font-family: var(--display);
+  font-size: clamp(3rem, 5.4vw, 5.8rem);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 0.92;
+  text-transform: uppercase;
+}
+
+.community-copy > p:last-child {
+  max-width: 38rem;
+  margin: 1.7rem 0 0;
+  color: var(--muted);
+  font-size: clamp(0.94rem, 1.15vw, 1.06rem);
+  line-height: 1.8;
+}
+
+.community-action {
+  display: grid;
+  min-width: 17rem;
+  gap: 0.9rem;
+  justify-items: center;
+}
+
+.community-button {
+  min-width: 17rem;
+  color: #f2f3ff;
+  border: 1px solid #7b86ff;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.07), transparent),
+    linear-gradient(135deg, #4652cf, #30399f);
+  box-shadow:
+    inset 0 0 0 2px rgba(4, 7, 19, 0.5),
+    0 0 2.5rem rgba(88, 101, 242, 0.16);
+  clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.community-button:hover {
+  border-color: #b5bbff;
+  box-shadow:
+    inset 0 0 0 2px rgba(4, 7, 19, 0.5),
+    0 0 3rem rgba(88, 101, 242, 0.28);
+  transform: translateY(-2px);
+}
+
 .downloads {
   background:
     radial-gradient(circle at 50% 0, rgba(38, 233, 255, 0.075), transparent 32rem),
@@ -1105,11 +1296,36 @@ footer > p:nth-child(2) {
 }
 
 .footer-credit {
-  justify-self: end;
+  margin: 0;
 }
 
 .footer-credit a {
   color: var(--cyan);
+}
+
+.footer-meta {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  justify-self: end;
+}
+
+.footer-community {
+  color: #aeb5ff;
+  font-family: var(--display);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: color 160ms ease;
+}
+
+.footer-community:hover {
+  color: #d6d9ff;
+}
+
+.footer-community span {
+  margin-left: 0.15em;
 }
 
 .pixel-heart {
@@ -1348,6 +1564,15 @@ footer > p:nth-child(2) {
     gap: 1.5rem;
   }
 
+  .community-panel {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .community-action {
+    grid-column: 2;
+    justify-items: start;
+  }
+
   .download-grid {
     grid-template-columns: 1fr;
     max-width: 38rem;
@@ -1469,6 +1694,30 @@ footer > p:nth-child(2) {
     margin-bottom: 0.8rem;
   }
 
+  .community-panel {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .community-channel {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .community-action {
+    grid-column: auto;
+    width: 100%;
+  }
+
+  .community-button {
+    min-width: 0;
+  }
+
+  .community-panel::after {
+    display: none;
+  }
+
   .release-meta {
     align-items: flex-start;
     flex-direction: column;
@@ -1481,6 +1730,13 @@ footer > p:nth-child(2) {
   }
 
   .footer-credit {
+    justify-self: auto;
+  }
+
+  .footer-meta {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.8rem;
     justify-self: auto;
   }
 }
