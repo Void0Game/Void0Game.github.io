@@ -36,7 +36,8 @@ presented as competing permanent taglines.
 | --- | --- | --- |
 | Physical map or arena | `Frame` | `Tempest Frame` and `Singularity Frame` in v0.21.0 |
 | Competitive format | `Circuit` | `Prime Circuit Solo`, `Prime Teams`, and ruleset context |
-| Rider identity | `Signal` | Roster, status, progression, and lore |
+| Player identity | `Signal` | Roster, status, progression, and lore |
+| Player-controlled machine | `vehicle` | Keep its exact machine type deliberately undefined |
 | Lethal path | `Signal Trace`, `Trace` | Mechanic explanation and controls |
 | Session connection | `Voidlink` | Authored system or transmission copy |
 | Threat | `Void` | The consuming space beneath or within a Frame |
@@ -48,7 +49,6 @@ or geometry terminology may still use lowercase `grid` internally.
 
 These lines may remain or be reused:
 
-- `Every turn leaves a weapon behind.`
 - `Signals from the Void.`
 - `Your movement becomes territory.`
 - `Sixteen Signals.`
@@ -81,8 +81,9 @@ The public v0.21.0 presentation covers **Prime Circuit Solo** and **Prime Teams
 local Practice content. Private Circuit and online play remain outside the
 public build and must not be presented as available features.
 
-`Enter the circuit` remains the approved action label. `Outrun the storm.
-Become the Signal.` remains supporting campaign copy beneath the canonical
+`Download Now` is the approved primary hero action and `See How It Plays` is
+the approved secondary hero action. `Outrun the storm. Become the Signal.`
+remains supporting campaign copy beneath the canonical
 `ENTER THE VOID. OUTRIDE THE LIGHT.` tagline.
 
 ## Editorial rules
@@ -94,8 +95,8 @@ Become the Signal.` remains supporting campaign copy beneath the canonical
    v0.21.0; name future Frames only when their release scope is approved.
 4. Use `Prime Circuit Solo` for solo and `Prime Teams` for the local 8v8 format.
 5. Keep download and play calls to action literal and understandable.
-6. Do not invent a replacement for `ENTER THE CIRCUIT` until the game-side
-   action label is separately approved.
+6. Use `vehicle` when the machine must be named; do not narrow its type in
+   public copy.
 7. Metadata, social cards, visible copy, alt text, and footer copy must follow
    the same vocabulary.
 

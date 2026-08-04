@@ -157,6 +157,12 @@ img {
   color: var(--cyan-soft);
 }
 
+.wordmark-inline .slashed-zero {
+  margin-left: 0.04em;
+  color: var(--magenta);
+  text-shadow: 0 0 0.45em rgba(255, 63, 210, 0.3);
+}
+
 .slashed-zero {
   display: inline-block;
   font-family: inherit;
@@ -781,9 +787,11 @@ img {
   display: block;
   color: var(--magenta);
   font-family: var(--display);
-  font-size: clamp(2.4rem, 4vw, 4.6rem);
+  font-size: clamp(1.75rem, 2.7vw, 3.15rem);
   font-weight: 500;
+  letter-spacing: -0.025em;
   line-height: 1;
+  text-transform: uppercase;
   text-shadow: 0 0 1.2rem rgba(255, 63, 210, 0.18);
 }
 
@@ -949,30 +957,107 @@ img {
   margin-top: 1.8rem;
 }
 
-.zero-meter {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 1rem;
-  align-items: center;
-  margin-top: 2.3rem;
-  color: var(--muted);
+.match-timeline {
+  margin-top: 2.6rem;
   font-family: var(--display);
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
   text-transform: uppercase;
 }
 
-.zero-meter i {
-  height: 1px;
-  background: linear-gradient(90deg, #071018, var(--magenta));
-  box-shadow: 0 0 0.8rem rgba(255, 63, 210, 0.38);
+.match-timeline ol {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.zero-meter strong {
-  color: var(--magenta);
-  font-size: 0.95rem;
-  text-shadow: 0 0 1rem rgba(255, 63, 210, 0.72);
+.match-timeline ol::before,
+.match-timeline ol::after {
+  position: absolute;
+  top: 0.42rem;
+  right: 0;
+  left: 0;
+  height: 1px;
+  pointer-events: none;
+  content: "";
+}
+
+.match-timeline ol::before {
+  background: linear-gradient(90deg, rgba(38, 233, 255, 0.3), rgba(255, 63, 210, 0.52));
+}
+
+.match-timeline ol::after {
+  width: 16%;
+  right: auto;
+  opacity: 0;
+  background: linear-gradient(90deg, transparent, #efffff, transparent);
+  box-shadow: 0 0 1rem rgba(38, 233, 255, 0.7);
+  animation: timeline-scan 4.8s ease-in-out infinite;
+}
+
+.match-timeline li {
+  --timeline-color: var(--cyan);
+
+  position: relative;
+  min-width: 0;
+  padding-top: 1.45rem;
+}
+
+.match-timeline li::before {
+  position: absolute;
+  top: 0.13rem;
+  left: 0;
+  width: 0.58rem;
+  height: 0.58rem;
+  content: "";
+  background: #03070d;
+  border: 1px solid var(--timeline-color);
+  box-shadow: 0 0 0.8rem color-mix(in srgb, var(--timeline-color) 58%, transparent);
+  transform: rotate(45deg);
+}
+
+.match-timeline .timeline-fade {
+  --timeline-color: var(--warning);
+}
+
+.match-timeline .timeline-final,
+.match-timeline .timeline-deadline {
+  --timeline-color: var(--magenta);
+}
+
+.match-timeline time,
+.match-timeline strong,
+.match-timeline span {
+  display: block;
+}
+
+.match-timeline time {
+  color: var(--timeline-color);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-shadow: 0 0 0.8rem color-mix(in srgb, var(--timeline-color) 48%, transparent);
+}
+
+.match-timeline strong {
+  min-height: 2.5em;
+  margin-top: 0.38rem;
+  color: #e8fbff;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  line-height: 1.25;
+}
+
+.match-timeline span {
+  margin-top: 0.35rem;
+  color: var(--muted);
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  line-height: 1.3;
 }
 
 .gallery {
@@ -1411,38 +1496,43 @@ img {
   position: absolute;
   inset: 0;
   z-index: -1;
-  padding: 2px;
   content: "";
-  opacity: 0.35;
-  background: conic-gradient(
-    from 0deg,
-    transparent 0deg 214deg,
-    rgba(var(--platform-rgb), 0.08) 228deg,
-    var(--platform-color) 270deg,
-    rgba(var(--platform-rgb), 0.14) 312deg,
-    transparent 328deg 360deg
-  );
-  clip-path: inherit;
-  -webkit-mask:
-    linear-gradient(#000 0 0) content-box,
-    linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  animation: platform-square-orbit 2.2s linear infinite paused;
-  transition: opacity 220ms ease;
+  opacity: 0;
+  background: linear-gradient(110deg, transparent 22%, rgba(var(--platform-rgb), 0.32) 48%, transparent 72%);
+  transform: translateX(-130%);
+  transition:
+    opacity 180ms ease,
+    transform 460ms ease;
+}
+
+.platform-mark::after {
+  position: absolute;
+  inset: 3px;
+  z-index: -1;
+  pointer-events: none;
+  content: "";
+  opacity: 0;
+  border-top: 1px solid rgba(var(--platform-rgb), 0.72);
+  border-right: 1px solid rgba(var(--platform-rgb), 0.72);
+  transition: opacity 180ms ease;
 }
 
 .download-card:hover .platform-mark,
 .download-card:focus-within .platform-mark {
   background: rgba(var(--platform-rgb), 0.035);
   box-shadow: 0 0 2rem rgba(var(--platform-rgb), 0.12);
-  transform: scale(1.06);
+  transform: translateY(-2px);
 }
 
 .download-card:hover .platform-mark::before,
 .download-card:focus-within .platform-mark::before {
   opacity: 1;
-  animation-play-state: running;
+  transform: translateX(130%);
+}
+
+.download-card:hover .platform-mark::after,
+.download-card:focus-within .platform-mark::after {
+  opacity: 1;
 }
 
 .download-card small {
@@ -1739,9 +1829,37 @@ footer > p:nth-child(2) {
   }
 }
 
-@keyframes platform-square-orbit {
-  to {
-    transform: rotate(360deg);
+@keyframes timeline-scan {
+  0%,
+  18% {
+    left: 0;
+    opacity: 0;
+  }
+  30%,
+  72% {
+    opacity: 0.78;
+  }
+  88%,
+  100% {
+    left: 84%;
+    opacity: 0;
+  }
+}
+
+@keyframes timeline-scan-mobile {
+  0%,
+  18% {
+    top: 0;
+    opacity: 0;
+  }
+  30%,
+  72% {
+    opacity: 0.78;
+  }
+  88%,
+  100% {
+    top: 84%;
+    opacity: 0;
   }
 }
 
@@ -2007,6 +2125,46 @@ footer > p:nth-child(2) {
 
   .release-grid {
     grid-template-columns: 1fr;
+  }
+
+  .match-timeline ol {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-left: 1.4rem;
+  }
+
+  .match-timeline ol::before,
+  .match-timeline ol::after {
+    top: 0;
+    right: auto;
+    bottom: 0;
+    left: 0.28rem;
+    width: 1px;
+    height: auto;
+  }
+
+  .match-timeline ol::before {
+    background: linear-gradient(180deg, rgba(38, 233, 255, 0.3), rgba(255, 63, 210, 0.52));
+  }
+
+  .match-timeline ol::after {
+    height: 16%;
+    bottom: auto;
+    background: linear-gradient(180deg, transparent, #efffff, transparent);
+    animation-name: timeline-scan-mobile;
+  }
+
+  .match-timeline li {
+    padding-top: 0;
+  }
+
+  .match-timeline li::before {
+    top: 0.08rem;
+    left: -1.4rem;
+  }
+
+  .match-timeline strong {
+    min-height: 0;
   }
 
   .system-card {
