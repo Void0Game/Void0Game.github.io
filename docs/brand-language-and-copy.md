@@ -2,7 +2,7 @@
 
 Status: **Accepted editorial contract**
 
-Implementation: **Applied for v0.20.0**
+Implementation: **Applied for v0.21.0**
 
 ## Source of truth
 
@@ -34,8 +34,8 @@ presented as competing permanent taglines.
 
 | Concept | Required term | Landing-page use |
 | --- | --- | --- |
-| Physical map or arena | `Frame` | `Tempest Frame` in v0.20.0; future map names only after release |
-| Competitive format | `Circuit` | `Prime Circuit Solo` and ruleset context |
+| Physical map or arena | `Frame` | `Tempest Frame` and `Singularity Frame` in v0.21.0 |
+| Competitive format | `Circuit` | `Prime Circuit Solo`, `Prime Teams`, and ruleset context |
 | Rider identity | `Signal` | Roster, status, progression, and lore |
 | Lethal path | `Signal Trace`, `Trace` | Mechanic explanation and controls |
 | Session connection | `Voidlink` | Authored system or transmission copy |
@@ -74,11 +74,12 @@ REBOOT LINK SEVERED. FINAL SIGNAL PROTOCOL INITIATED.
 VOID ZERO.
 ```
 
-## v0.20 release scope
+## v0.21 release scope
 
-The public v0.20.0 presentation covers **Prime Circuit Solo** on the
-**Tempest Frame**. Team Battle and the proposed Singularity Frame are preserved
-as post-v0.20 development tracks and must not be presented as shipped features.
+The public v0.21.0 presentation covers **Prime Circuit Solo** and **Prime Teams
+8v8** on the **Tempest Frame** and **Singularity Frame**. All are shipped as
+local Practice content. Private Circuit and online play remain outside the
+public build and must not be presented as available features.
 
 `Enter the circuit` remains the approved action label. `Outrun the storm.
 Become the Signal.` remains supporting campaign copy beneath the canonical
@@ -89,9 +90,9 @@ Become the Signal.` remains supporting campaign copy beneath the canonical
 1. Write `VOID0` with a zero in display branding and `Void0` in normal prose.
 2. Capitalize `Signal`, `Trace`, `Frame`, `Circuit`, `Void`, and `Voidlink`
    when they carry their defined product meanings.
-3. Use `Tempest Frame` for the map shipped in v0.20.0; name future Frames only
-   when their release scope is approved.
-4. Use `Prime Circuit Solo` for the solo competitive format.
+3. Use `Tempest Frame` and `Singularity Frame` for the Frames shipped in
+   v0.21.0; name future Frames only when their release scope is approved.
+4. Use `Prime Circuit Solo` for solo and `Prime Teams` for the local 8v8 format.
 5. Keep download and play calls to action literal and understandable.
 6. Do not invent a replacement for `ENTER THE CIRCUIT` until the game-side
    action label is separately approved.

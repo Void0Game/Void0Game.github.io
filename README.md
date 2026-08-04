@@ -7,19 +7,19 @@ the public rolling release tagged `void0-latest` from
 [`romajs/game-downloads`](https://github.com/romajs/game-downloads), then
 connects each platform button to the matching package.
 
-The current presentation tracks Void0 v0.20.0 while focusing on the lasting
+The current presentation tracks Void0 v0.21.0 while focusing on the lasting
 game fantasy: sixteen-Signal survival, weaponized movement, signed Signal
-Score, dynamic Fade pressure, electronic adrenaline, authoritative online
-direction, career progression, six stored power-ups, and the collapsing
-Tempest Frame. This release presents the Prime Circuit Solo ruleset; Teams and
-the Singularity Frame remain outside the public v0.20.0 build.
+Score, dynamic Fade pressure, electronic adrenaline, career progression, six
+stored power-ups, and hostile collapsing Frames. The release presents Tempest
+and Singularity with Prime Circuit Solo and Prime Teams 8v8 in an offline-only
+desktop build.
 
 ## Brand language
 
 The accepted public tagline is **Outride the Void.** Physical maps are named
-**Frames** (`Tempest Frame` in v0.20.0), **Circuit** identifies the competitive
-format, **Signal** remains the rider identity, and **Voidlink** identifies the
-session connection. The site-specific editorial contract is documented in
+**Frames** (`Tempest` and `Singularity` in v0.21.0), **Circuit** identifies the
+competitive format, **Signal** remains the rider identity, and **Voidlink**
+identifies a future session connection. The site-specific editorial contract is documented in
 [Brand Language and Copy](docs/brand-language-and-copy.md).
 
 ## Local development
