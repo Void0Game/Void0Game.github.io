@@ -16,7 +16,7 @@ desktop build.
 
 ## Brand language
 
-The accepted public tagline is **Outride the Void.** Physical maps are named
+The accepted public tagline is **Enter the Void. Outride the Light.** Physical maps are named
 **Frames** (`Tempest` and `Singularity` in v0.21.0), **Circuit** identifies the
 competitive format, **Signal** remains the rider identity, and **Voidlink**
 identifies a future session connection. The site-specific editorial contract is documented in

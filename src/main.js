@@ -45,7 +45,7 @@ async function loadLatestRelease() {
     document.querySelector("[data-release-date]").textContent =
       `Updated ${formatDate(release.updated_at || release.published_at)}`;
     const notes = document.querySelector("[data-release-notes]");
-    notes.href = release.html_url;
+    notes.href = "/news/";
 
     Object.entries(expectedAssets).forEach(([platform, filename]) => {
       const link = document.querySelector(`[data-download="${platform}"]`);

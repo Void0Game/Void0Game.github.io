@@ -17,13 +17,13 @@ The canonical product and tagline lockup is:
 
 ```text
 VOID0
-OUTRIDE THE VOID.
+ENTER THE VOID. OUTRIDE THE LIGHT.
 ```
 
 The browser title should become:
 
 ```text
-Void0 — Outride the Void
+Void0 — Enter the Void. Outride the Light.
 ```
 
 The exact tagline should appear once in the primary hero or adjacent brand
@@ -83,7 +83,7 @@ public build and must not be presented as available features.
 
 `Enter the circuit` remains the approved action label. `Outrun the storm.
 Become the Signal.` remains supporting campaign copy beneath the canonical
-`OUTRIDE THE VOID.` tagline.
+`ENTER THE VOID. OUTRIDE THE LIGHT.` tagline.
 
 ## Editorial rules
 
