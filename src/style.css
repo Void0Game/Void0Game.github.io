@@ -11,6 +11,7 @@
   --cyan: #26e9ff;
   --cyan-soft: #81f3ff;
   --magenta: #ff3fd2;
+  --team-red: #ff304f;
   --acid: #b6ff00;
   --warning: #ffd23f;
   --copy: #d9f8ff;
@@ -316,7 +317,7 @@ img {
     linear-gradient(90deg, rgba(1, 4, 9, 0.995) 0%, rgba(1, 5, 11, 0.9) 35%, rgba(1, 4, 9, 0.3) 67%, rgba(1, 4, 9, 0.07) 100%),
     linear-gradient(0deg, #02050a 0%, rgba(2, 5, 10, 0.2) 46%, rgba(0, 0, 0, 0.18) 100%),
     url("/images/hero.webp") 52% 50% / cover no-repeat;
-  filter: saturate(1.04) contrast(1.12) brightness(0.86);
+  filter: saturate(1.06) contrast(1.14) brightness(0.74);
   transform: scale(1.02);
   animation: hero-drift 18s ease-in-out infinite alternate;
 }
@@ -421,22 +422,7 @@ img {
   opacity: 0;
   transition:
     color 180ms ease,
-    filter 220ms ease,
     text-shadow 220ms ease;
-}
-
-.hero-wordmark::before {
-  position: absolute;
-  right: 0.05em;
-  bottom: -1.65rem;
-  color: var(--cyan);
-  content: "3";
-  font-family: var(--display);
-  font-size: clamp(0.6rem, 0.8vw, 0.76rem);
-  font-weight: 600;
-  letter-spacing: 0.22em;
-  opacity: 0;
-  text-shadow: 0 0 0.8rem rgba(38, 233, 255, 0.65);
 }
 
 .hero-wordmark::after {
@@ -465,10 +451,6 @@ img {
   animation: wordmark-type-in 620ms steps(3, end) calc(170ms + var(--char-index) * 105ms) both;
 }
 
-.hero-wordmark.is-visible::before {
-  animation: wordmark-countdown 1.25s steps(1, end) 80ms both;
-}
-
 .hero-wordmark.is-visible::after {
   animation: wordmark-scan 1.25s cubic-bezier(0.2, 0.75, 0.25, 1) 620ms both;
 }
@@ -482,9 +464,11 @@ img {
 
 .hero-wordmark:hover > .slashed-zero {
   color: #ff5fda;
-  filter:
-    drop-shadow(0 0 0.035em rgba(255, 255, 255, 0.32))
-    drop-shadow(0 0 0.13em rgba(255, 63, 210, 0.62));
+  text-shadow:
+    -0.012em 0 rgba(38, 233, 255, 0.64),
+    0.012em 0 rgba(255, 255, 255, 0.22),
+    0 0 0.075em rgba(255, 255, 255, 0.22),
+    0 0 0.24em rgba(255, 63, 210, 0.58);
 }
 
 .hero-wordmark:hover::after {
@@ -1764,38 +1748,9 @@ footer > p:nth-child(2) {
     transform: translate3d(-0.012em, 0, 0);
   }
   100% {
-    clip-path: inset(0 0 0 0);
+    clip-path: none;
     opacity: 1;
     transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes wordmark-countdown {
-  0%,
-  19% {
-    content: "3";
-    opacity: 0.9;
-  }
-  20%,
-  39% {
-    content: "2";
-    opacity: 0.9;
-  }
-  40%,
-  59% {
-    content: "1";
-    opacity: 0.9;
-  }
-  60%,
-  88% {
-    color: var(--magenta);
-    content: "START";
-    opacity: 1;
-  }
-  100% {
-    color: var(--magenta);
-    content: "START";
-    opacity: 0;
   }
 }
 
@@ -2242,7 +2197,6 @@ footer > p:nth-child(2) {
   }
 
   .hero-wordmark.is-visible > span,
-  .hero-wordmark.is-visible::before,
   .hero-wordmark.is-visible::after {
     animation: none !important;
   }

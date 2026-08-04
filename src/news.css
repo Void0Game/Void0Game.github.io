@@ -40,8 +40,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 54% 50%;
-  filter: saturate(1.08) contrast(1.08) brightness(0.78);
+  object-position: 50% 50%;
+  filter: saturate(1.08) contrast(1.1) brightness(0.72);
   transform: scale(1.025);
   animation: news-hero-drift 20s ease-in-out infinite alternate;
 }
@@ -395,7 +395,7 @@
   grid-template-columns: minmax(28rem, 1fr) minmax(18rem, 0.72fr);
   background:
     radial-gradient(circle at 15% 50%, rgba(38, 233, 255, 0.055), transparent 30rem),
-    radial-gradient(circle at 85% 50%, rgba(255, 63, 210, 0.05), transparent 30rem),
+    radial-gradient(circle at 85% 50%, rgba(255, 48, 79, 0.055), transparent 30rem),
     #02060b;
 }
 
@@ -422,7 +422,7 @@
 }
 
 .team-versus span:last-child {
-  color: var(--magenta);
+  color: var(--team-red);
 }
 
 .team-versus strong {
@@ -628,7 +628,7 @@
   }
 
   .news-hero-image {
-    object-position: 57% center;
+    object-position: 50% center;
   }
 
   .news-hero-shade {
